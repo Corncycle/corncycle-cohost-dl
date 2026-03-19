@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0,0,48,48">
+	<style>
+		@media (prefers-reduced-motion) {
+			image {
+				/*filter: none !important;*/
+			}
+		}
+	</style>
+	<filter id="displacementFilter" height="68">
+		<feTurbulence
+			baseFrequency="0.01"
+			numOctaves="4"
+			height="68"
+			y="0"
+		>
+			<animate attributeName="seed" dur="100000s" values="0;99999" repeatCount="indefinite"/>
+		</feTurbulence>
+		<feOffset y="0" dy="-20" height="68"/>
+		<feDisplacementMap
+			y="0"
+			in="SourceGraphic"
+			scale="20"
+			xChannelSelector="R"
+			yChannelSelector="G"
+		>
+		</feDisplacementMap>
+	</filter>
+	<image href="data:image/webp;base64,UklGRiwBAABXRUJQVlA4TB8BAAAvL8ALEA7JbSRJkqTKyDIyr3jzi8jI3Hv3GQ43uECAWFEq0BShAKKSQf46WfTmfwK+3v/gD9j/MMDXxxj4Mbj8MYzxj8Ptd/hm68gdz7YXwM54J+3uAp/ZBScXADdSA46xExcKgKZbVhIn2/EA3W4rSSOb/kDtNJBKTytx1PiCBheJqvsLsHFTkxc6MLQNSCQJ/ainJjlIDQG9xe7SIUkk6CHVtknbIZEk3FClAsROYBYmVFVsAJvaQBKSMGi3ZW4gSQCSMNsqMPYhPUgSJMxUMWAMOC3oCDDYAuCCMSQBvd2yAKY3IJLwqC24MUYSJDxRozJV5QfSITxRo5Eq5Jl2JamLKqTnewhCCmTIE3UiiSTSEz07NwyT8J2uAfSXDwA=" filter="url(#displacementFilter)" width="40" height="40" style="image-rendering:crisp-edges"/>
+</svg>

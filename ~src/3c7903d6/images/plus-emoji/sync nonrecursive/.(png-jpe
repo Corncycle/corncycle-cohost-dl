@@ -1,0 +1,45 @@
+var map = {
+	"./eggbug-asleep.png": 52930,
+	"./eggbug-devious.png": 56917,
+	"./eggbug-heart-sob.png": 75007,
+	"./eggbug-nervous.png": 33210,
+	"./eggbug-pensive.png": 10010,
+	"./eggbug-pleading.png": 30641,
+	"./eggbug-relieved.png": 74991,
+	"./eggbug-shocked.png": 34274,
+	"./eggbug-smile-hearts.png": 95211,
+	"./eggbug-sob.png": 25322,
+	"./eggbug-tuesday.png": 85941,
+	"./eggbug-uwu.png": 22204,
+	"./eggbug-wink.png": 22571,
+	"./host-aww.png": 21114,
+	"./host-cry.png": 45272,
+	"./host-evil.png": 25043,
+	"./host-frown.png": 22122,
+	"./host-joy.png": 97509,
+	"./host-love.png": 19489,
+	"./host-nervous.png": 52704,
+	"./host-plead.png": 16185,
+	"./host-shock.png": 31795,
+	"./host-stare.png": 80254
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 43258;
